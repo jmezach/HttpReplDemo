@@ -44,3 +44,7 @@ RUN dotnet tool install -g Microsoft.dotnet-httprepl --version "3.0.0-*"
 
 # Set path
 ENV PATH="$PATH:~/.dotnet/tools"
+
+# Set preferences for HTTP REPL
+RUN echo "editor.command.default=code" >> ~/.httpreplprefs \
+    && echo "editor.command.default.arguments=--wait" >> ~/.httpreplprefs
