@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or the definition README at
 // https://github.com/microsoft/vscode-dev-containers/tree/master/containers/dotnetcore-2.2
 {
-	"name": "C# (.NET Core 3.0 Preview 9)",
+	"name": "C# (.NET Core 3.0 RC1)",
 	"dockerFile": "Dockerfile",
 	
 	// Use 'settings' to set *default* container specific settings.json values on container create. 
