@@ -1,0 +1,5 @@
+cd /
+cd api
+cd Customer
+get
+post -c "{ \"id\": 1, \"firstName\": \"Jane\", \"lastName\": \"Doe\" }"
