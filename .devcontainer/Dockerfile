@@ -3,7 +3,7 @@
 # Licensed under the MIT License. See https://go.microsoft.com/fwlink/?linkid=2090316 for license information.
 #-------------------------------------------------------------------------------------------------------------
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.0.100-rc1
+FROM mcr.microsoft.com/dotnet/core/sdk:3.0.100
 
 # Avoid warnings by switching to noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
@@ -40,7 +40,7 @@ RUN apt-get update \
 ENV DEBIAN_FRONTEND=
 
 # Install HTTPrepl
-RUN dotnet tool install -g Microsoft.dotnet-httprepl --version "3.0.0-*"
+RUN dotnet tool install -g Microsoft.dotnet-httprepl --version "3.0.0"
 
 # Set path
 ENV PATH="$PATH:~/.dotnet/tools"
